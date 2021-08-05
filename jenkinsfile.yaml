@@ -8,9 +8,9 @@ pipeline:
            - sh "java --version"
            - sh "git --version"
       - stage: "jenkins YAML maven test compile"
-       steps:
+        steps:
            - git "https://github.com/harishpallapu/folder.git"
            - sh "mvn test compile"
       - stage: "final jenkins YAML pipeline stage"
-       steps:
+        steps:
            - sh "echo 'jenkins YAML pipeline complete'"
