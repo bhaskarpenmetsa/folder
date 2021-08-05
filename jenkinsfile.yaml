@@ -5,7 +5,7 @@ pipeline:
       - stage: "log jenkins Maven java and git versions"
         steps:
            - sh "mvn --version"
-           - sh "java --version"
+           - sh "java -version"
            - sh "git --version"
       - stage: "jenkins YAML maven test compile"
         steps:
