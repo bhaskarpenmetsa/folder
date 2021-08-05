@@ -1,0 +1,16 @@
+pipeline:
+   agent:
+     any:
+   stages:
+      - stage: "log jenkins Maven java and git versions"
+        steps:
+           - sh "mvn --version"
+           - sh "java --version"
+           - sh "git --version"
+      -stage: "jenkins YAML maven test compile"
+       steps:
+           - git "https://github.com/harishpallapu/folder.git"
+           - sh "mvn test compile"
+      -stage: "final jenkins YAML pipeline stage"
+       steps:
+           - sh "echo 'jenkins YAML pipeline complete'"
