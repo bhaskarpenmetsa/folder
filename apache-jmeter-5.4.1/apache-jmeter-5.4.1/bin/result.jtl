@@ -1,0 +1,31 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1627628861216,226,TC001_Homepage,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4896,775,1,1,null,0,321,43
+1627628861283,226,1 /SpringMVCAnnotationShoppingCart/,200,OK,Thread Group 1-1,text,true,,4896,775,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/,156,0,43
+1627628861765,607,TC002_Login with admin ,200,"Number of samples in transaction : 3, number of failing samples : 0",Thread Group 1-1,,true,,16096,3653,1,1,null,0,4,0
+1627628861766,145,4 /SpringMVCAnnotationShoppingCart/login,200,OK,Thread Group 1-1,text,true,,5498,973,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/login,93,0,0
+1627628861913,287,6 /SpringMVCAnnotationShoppingCart/j_spring_security_check,200,OK,Thread Group 1-1,text,true,,5559,1691,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/accountInfo,97,0,0
+1627628862201,175,7 /SpringMVCAnnotationShoppingCart/accountInfo,200,OK,Thread Group 1-1,text,true,,5039,989,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/accountInfo,147,0,0
+1627628862377,396,TC003_Click create product ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,6636,1505,1,1,null,0,0,0
+1627628862377,396,9 /SpringMVCAnnotationShoppingCart/product,200,OK,Thread Group 1-1,text,true,,6636,1505,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/product,244,0,0
+1627628862773,2007,TC004_Fill details and submit,Non HTTP response code: java.net.URISyntaxException,"Number of samples in transaction : 7, number of failing samples : 1",Thread Group 1-1,,false,,60927,7298,1,1,null,0,12,0
+1627628862774,411,12 /SpringMVCAnnotationShoppingCart/product,200,OK,Thread Group 1-1,text,true,,6699,2035,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/product,272,0,0
+1627628863186,1081,13 /SpringMVCAnnotationShoppingCart/productList,200,OK,Thread Group 1-1,text,true,,31719,3563,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productList,294,0,0
+1627628864274,0,15 /SpringMVCAnnotationShoppingCart/productImage,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in query at index 78: http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=${DP_Product_Name},Thread Group 1-1,text,false,,1176,0,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=${DP_Product_Name},0,0,0
+1627628864275,130,17 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,6584,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDCT136,130,0,0
+1627628864406,122,16 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,1581,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDI0098,122,0,0
+1627628864528,145,19 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,6584,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDCT133,145,0,0
+1627628864674,118,18 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,6584,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDCT134,118,0,0
+1627628864792,1496,TC005_Navigate to product list,Non HTTP response code: java.net.URISyntaxException,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-1,,false,,54228,5291,1,1,null,0,7,0
+1627628864793,963,20 /SpringMVCAnnotationShoppingCart/productList,200,OK,Thread Group 1-1,text,true,,31719,3591,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productList,275,0,0
+1627628865757,0,25 /SpringMVCAnnotationShoppingCart/productImage,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in query at index 78: http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=${DP_Product_Name},Thread Group 1-1,text,false,,1176,0,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=${DP_Product_Name},0,0,0
+1627628865759,117,23 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,6584,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDCT134,117,0,0
+1627628865877,126,22 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,1581,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDI0098,126,0,0
+1627628866004,146,26 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,6584,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDCT136,146,0,0
+1627628866151,144,24 /SpringMVCAnnotationShoppingCart/productImage,200,OK,Thread Group 1-1,bin,true,,6584,425,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/productImage?code=PDCT133,144,0,0
+1627628866295,333,TC006_Navigate to order list ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,8562,999,1,1,null,0,1,0
+1627628866296,333,27 /SpringMVCAnnotationShoppingCart/orderList,200,OK,Thread Group 1-1,text,true,,8562,999,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/orderList,310,0,0
+1627628866630,198,TC007_Navigate to my cart ,200,"Number of samples in transaction : 1, number of failing samples : 0",Thread Group 1-1,,true,,4913,998,1,1,null,0,1,0
+1627628866630,198,29 /SpringMVCAnnotationShoppingCart/shoppingCart,200,OK,Thread Group 1-1,text,true,,4913,998,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/shoppingCart,168,0,0
+1627628866830,279,TC008_Logout,200,"Number of samples in transaction : 2, number of failing samples : 0",Thread Group 1-1,,true,,10089,2481,1,1,null,0,2,0
+1627628866831,152,31 /SpringMVCAnnotationShoppingCart/logout,200,OK,Thread Group 1-1,text,true,,5299,1489,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/,21,0,0
+1627628866984,127,32 /SpringMVCAnnotationShoppingCart/,200,OK,Thread Group 1-1,text,true,,4790,992,1,1,http://14.99.175.107:17670/SpringMVCAnnotationShoppingCart/,104,0,0
