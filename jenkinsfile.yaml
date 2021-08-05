@@ -2,7 +2,7 @@ pipeline:
    agent:
      any:
    stages:
-      - stage: "log jenkins Maven java and git versions"
+      -stage: "log jenkins Maven java and git versions"
         steps:
            - sh "mvn --version"
            - sh "java --version"
