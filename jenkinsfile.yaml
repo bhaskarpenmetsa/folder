@@ -12,6 +12,7 @@ pipeline:
            - git "https://github.com/harishpallapu/folder.git"
            - sh "chmod -R 777 *"
            - sh "./apache-jmeter-5.4.1/apache-jmeter-5.4.1/bin/jmeter -n -t OnlineShop_1.jmx -l OnlineShop_result.jtl -e -o OnlineShop_1.html"
+           - sh "ls"
       - stage: "final jenkins YAML pipeline stage"
         steps:
            - sh "echo 'jenkins YAML pipeline complete'"
