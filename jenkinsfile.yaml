@@ -3,7 +3,7 @@ pipeline:
      any:
    stages:
       -stage: "log jenkins Maven java and git versions"
-        steps:
+       steps:
            - sh "mvn --version"
            - sh "java --version"
            - sh "git --version"
