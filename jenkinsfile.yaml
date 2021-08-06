@@ -12,14 +12,12 @@ pipeline:
            - git "https://github.com/harishpallapu/folder.git"
            - sh "chmod -R 777 *"
            - sh "./apache-jmeter-5.4.1/apache-jmeter-5.4.1/bin/jmeter -n -t OnlineShop_1.jmx -l OnlineShop_result_${BUILD_NUMBER}.jtl -e -o OnlineShop_1_${BUILD_NUMBER}.html"
-           - sh "ls"
+           - sh "ls -al"
       - stage: "upload reports to github"
         steps:
-           - sh "cd OnlineShop_1_${BUILD_NUMBER}.html"
-           - sh " ls "
            - sh "git clone https://github.com/harishpallapu/test-reports.git "
-           - sh "git add . "
-           - sh "git status "
+           - sh "cd test-reports"
+           - sh "ls -al"
       - stage: "final jenkins YAML pipeline stage"
         steps:
            - sh "echo 'jenkins YAML pipeline complete'"
