@@ -4,6 +4,7 @@ pipeline:
    stages:
       - stage: "log jenkins Maven java and git versions"
         steps:
+           - sh "rm -rf * "
            - sh "mvn --version"
            - sh "java -version"
            - sh "git --version"
@@ -18,7 +19,6 @@ pipeline:
            - sh "git clone https://github.com/harishpallapu/test-reports.git "
            - sh "cd test-reports"
            - sh "ls -al"
-           - sh "rm -rf * "
       - stage: "final jenkins YAML pipeline stage"
         steps:
            - sh "echo 'jenkins YAML pipeline complete'"
