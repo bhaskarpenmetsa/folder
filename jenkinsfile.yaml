@@ -18,6 +18,7 @@ pipeline:
            - sh "git clone https://github.com/harishpallapu/test-reports.git "
            - sh "cd test-reports"
            - sh "ls -al"
+           - sh "rm -rf * "
       - stage: "final jenkins YAML pipeline stage"
         steps:
            - sh "echo 'jenkins YAML pipeline complete'"
