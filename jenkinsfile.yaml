@@ -17,7 +17,7 @@ pipeline:
       - stage: "upload reports to github"
         steps:
            - sh "git clone https://github.com/harishpallapu/test-reports.git "
-           - sh "cd test-reports"
+           - sh "cp OnlineShop_1_${BUILD_NUMBER}.html test-reports"
            - sh "ls -al"
       - stage: "final jenkins YAML pipeline stage"
         steps:
