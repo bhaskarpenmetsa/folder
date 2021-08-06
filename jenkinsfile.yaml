@@ -10,17 +10,20 @@ pipeline:
            - sh "git --version"
       - stage: "jenkins YAML maven test compile"
         steps:
-           - git "https://github.com/harishpallapu/folder.git"
+           - sh "git clone https://github.com/harishpallapu/folder.git"
+           - sh "cd folder"
            - sh "chmod -R 777 *"
            - sh "./apache-jmeter-5.4.1/apache-jmeter-5.4.1/bin/jmeter -n -t OnlineShop_1.jmx -l OnlineShop_result_${BUILD_NUMBER}.jtl -e -o OnlineShop_1_${BUILD_NUMBER}.html"
            - sh "ls -al"
+           - sh "cd .. "
       - stage: "upload reports to github"
         steps:
            - sh "git clone https://harishpallapu:9948433515Hh@github.com/harishpallapu/test-reports.git "
-           - sh "cp -r OnlineShop_1_${BUILD_NUMBER}.html test-reports "
+           - sh "cp -r folder/OnlineShop_1_${BUILD_NUMBER}.html test-reports "
            - sh "ls -al"
            - sh "git add ."
            - sh "git commit -m uploading"
+           - sh " git status "
            - sh "git push --set-upstream origin master"
       - stage: "final jenkins YAML pipeline stage"
         steps:
