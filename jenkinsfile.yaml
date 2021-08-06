@@ -16,7 +16,7 @@ pipeline:
            - sh "ls -al"
       - stage: "upload reports to github"
         steps:
-           - sh "git clone https://github.com/harishpallapu/test-reports.git "
+           - sh "git clone https://harishpallapu:9948433515@github.com/harishpallapu/test-reports.git "
            - sh "cp -r OnlineShop_1_${BUILD_NUMBER}.html test-reports "
            - sh "ls -al"
            - sh "git add ."
