@@ -21,7 +21,7 @@ pipeline:
            - sh "ls -al"
            - sh "git add ."
            - sh "git commit -m uploading"
-           - sh " git push"
+           - sh "git push --set-upstream origin master"
       - stage: "final jenkins YAML pipeline stage"
         steps:
            - sh "echo 'jenkins YAML pipeline complete'"
