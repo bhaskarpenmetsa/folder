@@ -9,11 +9,7 @@ pipeline:
            - sh "git --version"
       - stage: "sonarqube-sast"
         steps:
-           - withSonarQubeEnv "SonarQube"
-           "sonar.projectKey=Shoppingcart"
-           "sonar.organization=jenkins-test"
-           "sonar.sources=Shoppingcart/src"
-           "sonar.java.binaries=Shoppingcart/build/classes/Flexib/"
+           - sh "
       - stage: "Testing with jmeter"
         steps:
            - git "https://github.com/harishpallapu/folder.git"
